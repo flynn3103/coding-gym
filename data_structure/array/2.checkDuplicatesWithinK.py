@@ -19,7 +19,7 @@ Input: k = 3, arr[] = {1, 2, 3, 4, 4}
 Output: true
 """
 
-def check_duplicates_within_k(arr, k):
+def checkDuplicatesWithinK(arr, k):
     n = len(arr)
     # brute force
     # for i in range(n):
@@ -41,29 +41,29 @@ def check_duplicates_within_k(arr, k):
 
 # Driver method to test above method
 arr = [10, 5, 3, 4, 3, 5, 6]
-print("Yes" if check_duplicates_within_k(arr, 3) else "No")
+print("Yes" if checkDuplicatesWithinK(arr, 3) else "No")
 
 
 import unittest
 
 class TestCheckDuplicatesWithinK(unittest.TestCase):
     def test_duplicates_within_k(self):
-        self.assertTrue(check_duplicates_within_k([1, 2, 3, 1, 4, 5], 3))
+        self.assertTrue(checkDuplicatesWithinK([1, 2, 3, 1, 4, 5], 3))
     
     def test_duplicates_not_within_k(self):
-        self.assertFalse(check_duplicates_within_k([1, 2, 3, 4, 1, 2, 3, 4], 3))
+        self.assertFalse(checkDuplicatesWithinK([1, 2, 3, 4, 1, 2, 3, 4], 3))
     
     def test_no_duplicates(self):
-        self.assertFalse(check_duplicates_within_k([1, 2, 3, 4, 5], 3))
+        self.assertFalse(checkDuplicatesWithinK([1, 2, 3, 4, 5], 3))
     
     def test_empty_array(self):
-        self.assertFalse(check_duplicates_within_k([], 3))
+        self.assertFalse(checkDuplicatesWithinK([], 3))
     
     def test_single_element_array(self):
-        self.assertFalse(check_duplicates_within_k([1], 3))
+        self.assertFalse(checkDuplicatesWithinK([1], 3))
     
     def test_multiple_duplicates_within_k(self):
-        self.assertTrue(check_duplicates_within_k([1, 2, 3, 4, 4], 3))
+        self.assertTrue(checkDuplicatesWithinK([1, 2, 3, 4, 4], 3))
 
 if __name__ == '__main__':
     unittest.main()
