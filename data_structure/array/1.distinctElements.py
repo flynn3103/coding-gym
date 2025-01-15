@@ -1,5 +1,6 @@
 """
-Given an integer array arr[], print all distinct elements from this array. The given array may contain duplicates and the output should contain every element only once.
+Given an integer array arr[], print all distinct elements from this array. 
+The given array may contain duplicates and the output should contain every element only once.
 
 Examples: 
 
